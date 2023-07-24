@@ -930,6 +930,15 @@ img {
     letter-spacing: 0.04em;
 }
 
+input[type="checkbox"]:checked + .form-ratio-text .custom-icon {
+    background-color: var(--ocean, #404BBF); 
+    border: none; 
+}
+  
+input[type="checkbox"]:checked + .form-ratio-text .social-networks-footer {
+    fill: var(--cloud, #F4F4FD); 
+}
+
 .ratio {
     width: 16px;
     height: 16px;
