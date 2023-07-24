@@ -565,6 +565,10 @@ img {
     margin-bottom: 16px;
 }
 
+.footer-form {
+    gap: 24px;
+}
+
 .footer-input {
     width: 264px;
     height: 40px;
