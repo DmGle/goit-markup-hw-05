@@ -272,15 +272,15 @@
                         <svg class="form-icon" width="18" height="24"><use href="./images/icons.svg#icon-person"></use></svg>
                     </div>
                 </div>
-                <div class="container-modal-form" fro="phone">
-                    <label class="modal-form-label">Phone</label>
+                <div class="container-modal-form">
+                    <label class="modal-form-label" fro="phone">Phone</label>
                     <div class="form-item">
                         <input type="tel" id="phone" name="phone" class="label-input" />
                         <svg class="form-icon" width="18" height="24"><use href="./images/icons.svg#icon-phone"></use></svg>
                     </div>
                 </div>
-                <div class="container-modal-form" for="email">
-                    <label class="modal-form-label">Email</label>
+                <div class="container-modal-form">
+                    <label class="modal-form-label" for="email">Email</label>
                     <div class="form-item">
                         <input type="email" id="email" name="email" class="label-input" />
                         <svg class="form-icon" width="18" height="24"><use href="./images/icons.svg#icon-email"></use></svg>
@@ -290,13 +290,14 @@
                     <label class="modal-form-label" for="user-comment">
                         Comment
                     </label>
-                    <textarea name="comment" id="user-comment" rows="5" placeholder="Text input" class="label-input-comment"></textarea>
+                    <textarea name="user-comment" id="user-comment" rows="5" placeholder="Text input" class="label-input-comment"></textarea>
                 </div>
 
-                <div class="container-modal-form">
-                    <input type="checkbox" class="" name="ratio" value="true" id="user-privacy">
+                <div class="container-modal-checkbox">
+                    <input type="checkbox" class="modal-checkbox  visually-hidden" name="user-privacy" value="true" id="user-privacy">
                     <label class="form-ratio-text" for="user-privacy">
-                        I accept the terms and conditions of the <span class="form-link">Privacy Policy</span>
+                        <span class="ratio"><svg class="social-networks-footer" width="10" height="8"><use href="./images/icons.svg#icon-checkbox"></use></svg></span>
+                        I accept the terms and conditions of the <a class="form-link">Privacy Policy</a>
                     </label>
                 </div>
                 <button type="submit" class="form-btn">Send</button>
