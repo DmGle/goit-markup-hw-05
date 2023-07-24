@@ -485,10 +485,7 @@ img {
 .container-footer {
     display: flex;
     align-items: baseline;
-}
-
-.container-footer>div:not(:last-child) {
-    margin-right: 120px;
+    justify-content: space-between;
 }
 
 .footer-list-icon {
@@ -552,6 +549,48 @@ img {
 
 .social-networks-footer {
     fill: var(--cloud, #F4F4FD);
+}
+
+.footer-label {
+    margin-right: 24px;
+}
+
+.footer-form-title {
+    color: var(--white, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    background: var(--navyblue, #2E2F42);
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid var(--white, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer-form-btn {
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background: var(--iris, #4D5AE5);
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border: none;
 }
 
 /* ----------Portfolio */
@@ -718,8 +757,7 @@ img {
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding: 32px;
+    padding: 72px 24px 24px;
     width: 408px;
     min-height: 584px;
     top: 50%;
@@ -759,4 +797,75 @@ img {
 
 .modal-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-title {
+    color: var(--navyblue, #2E2F42);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+  
+.modal-form-label {
+    display: flex;
+    flex-direction: column;
+    color: var(--lightslate, #8E8F99);
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 1.17; 
+    letter-spacing: 0.04em;
+}
+  
+.label-input {
+    padding: 4px;
+    font-family: inherit;
+    width: 360px;
+    height: 58px;
+    border-radius: 4px;
+    border: 1px solid var(--iris, #4D5AE5);
+}
+
+.label-input[name="comment"] {
+    height: 120px;
+    resize: none;
+}
+
+.label-input:focus {
+    border: 1px solid #ccc;
+    padding: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form-ratio-text {
+    color: var(--lightslate, #8E8F99);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+.form-link {
+    color: var(--iris, #4D5AE5);
+    text-decoration-line: underline;
+}
+
+.form-btn {
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    border-radius: 4px;
+    background: var(--iris, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
