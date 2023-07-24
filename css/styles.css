@@ -925,7 +925,7 @@ img {
     letter-spacing: 0.04em;
 }
   
-.modal-checkbox:checked + .form-ratio-text .networks-footer {
+.modal-checkbox:checked + .form-ratio-text .ratio {
     fill: var(--cloud, #F4F4FD);
     background-color: var(--ocean, #404BBF); 
     border: none;
