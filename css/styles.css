@@ -915,11 +915,6 @@ img {
     margin-bottom: 24px;
 }
 
-.modal-checkbox:checked + .social-networks-footer {
-    background-color: #404bbf;
-    fill: #F4F4FD;
-}
-
 .form-ratio-text {
     color: var(--lightslate, #8E8F99);
     font-family: Roboto;
@@ -929,14 +924,11 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
 }
-
-input[type="checkbox"]:checked + .form-ratio-text .custom-icon {
-    background-color: var(--ocean, #404BBF); 
-    border: none; 
-}
   
-input[type="checkbox"]:checked + .form-ratio-text .social-networks-footer {
-    fill: var(--cloud, #F4F4FD); 
+.modal-checkbox:checked + .form-ratio-text .networks-footer {
+    fill: var(--cloud, #F4F4FD);
+    background-color: var(--ocean, #404BBF); 
+    border: none;
 }
 
 .ratio {
