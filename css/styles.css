@@ -566,21 +566,31 @@ img {
 }
 
 .footer-form {
+    display: flex;
     gap: 24px;
 }
 
 .footer-input {
     width: 264px;
     height: 40px;
-    background: var(--navyblue, #2E2F42);
+    background-color: transparent;
     padding: 8px 16px;
     border-radius: 4px;
     border: 1px solid var(--white, #FFF);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: var(--white, #ffffff);
+}
+
+.footer-input::placeholder {
+    color: var(--white, #ffffff);
 }
 
 .footer-form-btn {
-    display: inline-flex;
+    display: flex;
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
@@ -589,12 +599,19 @@ img {
     background: var(--iris, #4D5AE5);
     color: var(--white, #FFF);
     text-align: center;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     border: none;
+    cursor: pointer;
+    min-width: 165px;
+}
+
+.footer-btn-img {
+    fill: var(--cloud, #F4F4FD);
+    margin-left: 16px;
 }
 
 /* ----------Portfolio */
